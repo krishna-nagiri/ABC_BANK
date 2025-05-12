@@ -31,10 +31,10 @@ A secure, console-based and web-enhanced online banking system built using **PHP
 
 ## 📸 Screenshots
 
-![Login Page](screen_shots/Login_page.png)
-![Home Page](screen_shots/Home_page.png)
-![welcome_interface](screen_shots/welcome_interface(index).png)
-![Sign_UP Page](screen_shots/sign_up_page.png)
+![Login Page](/screen_shots/Login_page.png)
+![Home Page](/screen_shots/Home_page.png)
+![welcome_interface](/screen_shots/welcome_interface(index).png)
+![Sign_UP Page](/screen_shots/sign_up_page.png)
 
 
 
