@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="bank_logo.ico">
+    <title>ABC Bank</title>
+    <style>
+        
+        nav {
+            background-color: #5f6a6a;
+            color: white;
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        .nav-left {
+            display: flex;
+            align-items: center;
+        }
+        .nav-left img {
+            margin-right: 10px;
+        }
+        .nav-right {
+            display: flex;
+            align-items: center;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn {
+            background-color: #5f6a6a;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: white;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color:rgba(90, 104, 233, 0.51);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+
+        /* Container for moving boxes */
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .box {
+            width: 250px;
+            height: 150px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.5s ease-in-out;
+            cursor: pointer;
+        }
+
+        .box:hover {
+            transform: translateY(-10px) scale(1.05);
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Animations */
+        @keyframes slideIn {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        .box:nth-child(1) { animation: slideIn 1s ease-out; }
+        .box:nth-child(2) { animation: slideIn 1.2s ease-out; }
+        .box:nth-child(3) { animation: slideIn 1.4s ease-out; }
+        .box:nth-child(4) { animation: slideIn 1.6s ease-out; }
+        .box:nth-child(5) { animation: slideIn 1.8s ease-out; }
+
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+    
+</head>
+<body class="auth-body">
+
+    <nav>
+        <div class="nav-left">
+            <img src="index_page_logo.jpeg" alt="Bank Logo" width="75">
+            <div>
+                
+                <h2>ABC Bank&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+                <small> -Your Trusted Financial Partner</small>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="dropdown">
+                <button class="dropbtn">Account</button>
+                <div class="dropdown-content">
+                    <a href="login.html">Login</a>
+                    <a href="signup.html">Signup</a>
+                    <a href="contact us.html">contact us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+<br>
+<section>
+    <center>
+        <h1 style="text-decoration: underline;">Welcome to ABC Bank</h1>
+        <p>Your trusted financial partner, committed to providing secure and efficient banking services.</p>
+    </center>
+    <br>
+
+    <center><h2>Why Choose ABC Bank?</h2></center>
+    <p><center>At ABC Bank, we bring you cutting-edge financial solutions and top-tier security.</center></p>
+
+    <!-- Bank Features -->
+    <div class="container">
+        <div class="box">💰 Zero Balance Accounts</div>
+        <div class="box">🔒 2-Factor Authentication</div>
+        <div class="box">📱 Mobile & Internet Banking</div>
+        <div class="box">💳 Instant Virtual Debit Card</div>
+        <div class="box">🏦 AI-Powered Loan Approvals</div>
+        <div class="box">🎁 Cashback & Reward Programs</div>
+        <div class="box">🌍 International Money Transfers</div>
+        <div class="box">⚙️ Smart Budgeting Tools</div>
+    </div>
+    <br>
+    <br>
+    <center> 
+        <h2>Join ABC Bank Today!</h2> 
+        <p>Experience seamless banking with security and convenience at your fingertips.</p>
+        <a href="signup.html" class="btn">Open an Account</a>
+    </center>
+</section>
+
+    
+</body>
+</html>

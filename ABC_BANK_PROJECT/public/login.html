@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN | ABC BANK</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="icon" type="image/x-icon" href="bank_logo.ico">
+</head>
+<body class="auth-body">
+    <div class="auth-container">
+        <h2>ABC Bank</h2>
+        <form action="process_login.php" method="POST">
+            <div class="input-group">
+                <input type="text" name="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-group">
+                <input type="password" name="password" required>
+                <label>Password</label>
+            </div>
+            <button type="submit" class="auth-btn" name="login">Login</button>
+            <p class="link">Don't have an account? <a href="signup.html">Sign up</a></p>
+        </form>
+    </div>
+</body>
+</html>
